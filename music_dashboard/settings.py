@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'music',
 ]
 
 MIDDLEWARE = [
@@ -78,6 +79,18 @@ DATABASES = {
         'ENGINE': 'django.db.backends.sqlite3',
         'NAME': BASE_DIR / 'db.sqlite3',
     }
+}
+
+DATABASE = {
+    "default":{
+       "ENGINE":"django.db.backends.postgres",
+ 
+   "NAME" :"music_dash",
+   "USER":"music_user",
+   "PASSWORD":"music254",
+   "HOST":"localhost",
+   "PORT":5432
+}
 }
 
 
